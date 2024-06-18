@@ -19,25 +19,53 @@
         // }
 
         // Rate Discount
-        const rate = parseInt(prompt("Enter Rate : "));
-        const quantity = parseInt(prompt("Enter quantity : "));
+        // const rate = parseInt(prompt("Enter Rate : "));
+        // const quantity = parseInt(prompt("Enter quantity : "));
 
-        const bill = rate + quantity;
+        // const bill = rate + quantity;
 
-        if (bill > 100)
+        // if (bill > 100)
+        // {
+        //     console.log(`Bill : ${bill}`);
+        //     const discount = bill / 10;
+        //     const payableAmount = bill - discount;
+        //     console.log(`Discount : ${discount}`);
+        //     console.log(`Payable Amount : ${payableAmount}`);
+        // }
+        // else
+        // {
+        //     console.log(` No Discount`);
+        //     console.log(`Payable Amount : ${bill}`);
+        // }
+
+
+        // if else ladder
+        const num = 2;
+
+        if (num == 1)
         {
-            console.log(`Bill : ${bill}`);
-            const discount = bill / 10;
-            const payableAmount = bill - discount;
-            console.log(`Discount : ${discount}`);
-            console.log(`Payable Amount : ${payableAmount}`);
+            document.write("One")
+        }
+        else if(num == 2)
+        {
+            document.write("Two")
+        }
+        else if(num == 3)
+        {
+            document.write("Three")
+        }
+        else if(num == 4)
+        {
+            document.write("Four")
+        }
+        else if(num == 5)
+        {
+            document.write("Five")
         }
         else
         {
-            console.log(` No Discount`);
-            console.log(`Payable Amount : ${bill}`);
+            document.write("Invalid")
         }
-
 
         
     </script>
