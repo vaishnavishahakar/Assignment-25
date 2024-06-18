@@ -97,32 +97,61 @@
 
 
         // Find Percentage Grade
-        const per = parseInt(prompt("Enter Your Percent : "));
+        // const per = parseInt(prompt("Enter Your Percent : "));
 
-        if(per >= 90)
+        // if(per >= 90)
+        // {
+        //     document.write('A')
+        // }
+        // else if(per >= 80)
+        // {
+        //     document.write('B')
+        // }
+        // else if(per >= 70)
+        // {
+        //     document.write('C')
+        // }
+        // else if(per >= 60)
+        // {
+        //     document.write('D')
+        // }
+        // else if(per >= 50)
+        // {
+        //     document.write('E')
+        // }
+        // else
+        // {
+        //     document.write('Fail')
+        // }
+
+        //Boundary condition
+        const percent = parseInt(prompt("Enter Your Percent : "));
+
+        if(percent >= 50 && percent<60)
         {
-            document.write('A')
+            document.write('E')
         }
-        else if(per >= 80)
-        {
-            document.write('B')
-        }
-        else if(per >= 70)
-        {
-            document.write('C')
-        }
-        else if(per >= 60)
+        else if(percent >= 60 && percent<70)
         {
             document.write('D')
         }
-        else if(per >= 50)
+        else if(percent >= 70 && percent<80)
         {
-            document.write('E')
+            document.write('C')
+        }
+        else if(percent >= 80 && percent<90)
+        {
+            document.write('B')
+        }
+        else if(percent >= 90 && percent<=100)
+        {
+            document.write('A')
         }
         else
         {
             document.write('Fail')
         }
+
     </script>
 </body>
 </html>
