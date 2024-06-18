@@ -7,15 +7,39 @@
 </head>
 <body>
     <script>
-        const number = parseInt(prompt("Enter Number..."));
-        if (number % 2 == 0)
+        // Find even and odd number
+        // const number = parseInt(prompt("Enter Number..."));
+        // if (number % 2 == 0)
+        // {
+        //     document.write("Even Number")
+        // }
+        // else
+        // {
+        //     document.write("Odd Number")
+        // }
+
+        // Rate Discount
+        const rate = parseInt(prompt("Enter Rate : "));
+        const quantity = parseInt(prompt("Enter quantity : "));
+
+        const bill = rate + quantity;
+
+        if (bill > 100)
         {
-            document.write("Even Number")
+            console.log(`Bill : ${bill}`);
+            const discount = bill / 10;
+            const payableAmount = bill - discount;
+            console.log(`Discount : ${discount}`);
+            console.log(`Payable Amount : ${payableAmount}`);
         }
         else
         {
-            document.write("Odd Number")
+            console.log(` No Discount`);
+            console.log(`Payable Amount : ${bill}`);
         }
+
+
+        
     </script>
 </body>
 </html>
